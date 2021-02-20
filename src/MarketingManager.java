@@ -9,9 +9,15 @@ public class MarketingManager extends Employee{
         this.employees = employees;
     }
 
-
     double bonus() {
-        return 250*this.getClients().size();
+        return 250*this.employees.size();
     }
 
+    ArrayList<Employee> getEmployees() {
+        return employees;
+    }
+
+    void setEmployees(ArrayList<Employee> employees) {
+        this.employees = employees;
+    }
 }
